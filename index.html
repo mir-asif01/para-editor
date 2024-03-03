@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paragraph editor</title>
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .inputField {
+            height: 30px;
+            width: 200px;
+            border: 1px dotted blueviolet;
+            overflow-wrap: break-word;
+            font-size: 20px;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .container {
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .active {
+            background: #000;
+            color: #fff;
+        }
+
+        .font-xl {
+            font-size: 40px;
+        }
+
+        .p-20 {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <textarea name="inputField" class="inputField" id="inputField" cols="70" rows="10"></textarea>
+        <div>
+            <button id="bold" class="bold font-xl">b</button>
+            <button id="italic" class="italic font-xl">i</button>
+            <button id="underline" class="underline font-xl">u</button>
+            <input type="color" class="font-xl" id="color">
+            <input type="color" class="font-xl" id="bgColor">
+            <button id="changeStyle" class="font-xl">Change Style</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
